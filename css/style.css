@@ -1,0 +1,840 @@
+/*  ===========================================
+    Default Theme
+    -------------------------------------------
+    Fonts: Raleway & Open Sans
+    -------------------------------------------
+    Colors:
+        Moon Yellow:    #f4c613
+        Grey:           #212226
+        White Smoke:    #f4f4f4
+        White:          #fff
+        Black:          #000
+============================================ */
+
+/*  ===========================================
+|   |   |   |   Particles
+============================================ */
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    background-color: #00adb5;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+
+/*  ===========================================
+|   |   |   |   HTML, Body
+============================================ */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #222831;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+th {
+    font-family: "Raleway", sans-serif;
+}
+
+p,
+td {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background: #eeeeee;
+    overflow: hidden;
+}
+
+/*  ===========================================
+|   |   |   |   Preloader
+============================================ */
+
+#preloader {
+    background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../img/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+/*  ===========================================
+|   |   |   |     Header
+============================================ */
+
+.navbar {
+    padding: 35px 0 20px 0;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+}
+
+.site-nav.wrapper {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+    color: #222831;
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #eeeeee;
+}
+
+/* Dark Navigation */
+.dark-nav-top {
+    background: #393e46;
+    padding: 10px 0;
+    -webkit-box-shadow: 0 8px 6px -9px #222831;
+    box-shadow: 0 8px 6px -9px #222831;
+    z-index: 2;
+}
+
+.dark-nav-top ul.navbar-nav > li > a {
+    color: #eeeeee;
+    font-weight: 400 !important;
+}
+
+.dark-nav-top ul.navbar-nav > li > a:hover,
+.dark-nav-top ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #00adb5;
+}
+
+/* Scroll Spy active state */
+.dark-nav-top ul.navbar-nav > li.active > a {
+    color: #00adb5;
+    font-weight: 600 !important;
+}
+
+/*  ===========================================
+|   |   |   |   Home
+============================================ */
+
+#home {
+    background: none;
+    height: 100%;
+}
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #393e46;
+    font-size: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+#home-text p {
+    color: #393e46;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 8px 0px 30px 0px;
+}
+
+#image-home {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -150px;
+    border-radius: 360px;
+    margin-left: -150px;
+    width: 300px;
+}
+
+/*  ===========================================
+|   |   |   |       About me
+============================================ */
+
+#about-me {
+    background-color: #eeeeee;
+}
+
+.about-bio {
+    margin: 8px;
+    position: relative;
+    /*padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 16px; */
+}
+
+.about-overlay {
+    background-color: rgba(33, 34, 38, .9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.about-bio:hover .about-overlay {
+    background-color: #393e46;
+    opacity: 0.8;
+    border-radius: 16px;
+}
+
+.about-info {
+    width: 100%;
+    height: 100%;
+    padding: 80px 0;
+}
+
+.about-info h6 {
+    color: #00adb5;
+    font-size: 25px;
+    margin: 0;
+}
+
+.about-info p {
+    color: #eeeeee;
+}
+
+.about-bio th {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.about-bio td,
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+}
+
+/* Zoom effect */
+
+.about-bio img {
+    transition: transform .9s ease;
+}
+
+.about-bio img:hover {
+    -webkit-transform: scale(1.1);    
+    transform: scale(1.1);
+}
+
+.subheading {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+.subheading-date {
+    color: #393e46 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+/*  ===========================================
+|   |   |   |     Table
+============================================ */
+
+table {
+    border-spacing: 0;
+}
+
+td,
+th,
+p {
+    border-style: hidden !important;
+}
+
+/*  ===========================================
+|   |   |   |   Arrows
+============================================ */
+
+#arrow-up {
+    color: #eeeeee;
+    font-size: 20px;
+    border-color: #eeeeee;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+#arrow-up:hover,
+#arrow-up:focus {
+    color: #00aced;
+}
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    z-index: 1;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+}
+
+/*  ===========================================
+|   |   |   |   Buttons
+============================================ */
+
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-home {
+    color: #393e46;
+    border: 1px solid #393e46;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #eeeeee;
+    background-color: #393e46;
+    border: 1px solid #393e46;
+}
+
+.btn-technology {
+    color: #eeeeee;
+    background-color: #393e46;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none !important;
+    cursor: text !important;
+    pointer-events: none !important;
+}
+
+#btn-technology-special {
+    background-color: #eeeeee;
+    color: #222831;
+}
+
+.btn-back-to-top {
+    font-size: 16px;
+    padding: 6px 23px 6px 23px;
+    color: #eeeeee;
+    border-color: #eeeeee;
+    background: #393e46;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.btn-back-to-top:hover {
+    color: #00adb5;
+    font-size: 17px;
+    border-color: #00adb5;
+}
+
+/* Technology filter buttons */
+
+#isotope-filters .btn {
+    color: #393e46;
+    background: transparent;
+    border: 1px solid #393e46;
+    font-weight: 500;
+    padding: 6px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-bottom: 30px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: none;    
+    box-shadow: none;
+
+}
+
+#isotope-filters .btn:hover {
+    background: #393e46;
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+#isotope-filters .btn.active {
+    background: #393e46;
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+
+/*  ===========================================
+|   |   |   |   Content Boxes
+============================================ */
+
+.content-box-lg {
+    padding: 120px 0;
+}
+
+.content-box-md {
+    padding: 100px 0;
+}
+
+/*  ===========================================
+|   |   |   | Horizontal Headings
+============================================ */
+
+.horizontal-heading h2 {
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 45px;
+}
+
+.horizontal-heading {
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5 {
+    font-size: 16px;
+    color: #f4c613;
+    text-transform: uppercase;
+    display: inline-block;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+h2 span {
+    display: block;
+    padding-bottom: 7px;
+    border-bottom: 5px solid #393e46;
+    max-width: 5%;
+    display: table;
+}
+
+#contact h2 span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  ===========================================
+|   |   |   |   About 01
+============================================ */
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom {
+    margin-top: 60px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/*  ===========================================
+|   |   |   |       Social Icons
+============================================ */
+
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline;
+    padding: 0;
+}
+
+ul.social-list li a {
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 400ms linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #0795be;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #d5d707;
+    border-color: transparent;
+}
+
+
+/*  ===========================================
+|   |   |   |      Slider Buttons
+============================================ */
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    font-size: 30px;
+    color: #212226;
+    background: none;
+    margin-top: 0;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover,
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel button.owl-dot:hover {
+    background: none;
+    color: #00adb5;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+    outline: none;
+    font-size: 30px;
+}
+
+/*  ===========================================
+|   |   |   |      Skills
+============================================ */
+
+#skills {
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+}
+
+.skill {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill h4 {
+    line-height: 62px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.progress {
+    height: 25px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    overflow: visible;
+}
+
+.progress-bar {
+    background: #393e46;
+    position: relative;
+    border-radius: 5px;
+}
+
+.progress-bar span {
+    font-size: 11px;
+    border-radius: 5px;
+    font-weight: 100;
+    font-family: "Open sans", sans-serif;
+    background: #222831;
+    padding: 3px;
+    position: absolute;
+    left: 97%;
+    top: -47px;
+    color: #eeeeee;
+}
+
+.progress-bar span:before {
+    content: "";
+    border-top: 8px solid #222831;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 23%;
+}
+
+/*  ===========================================
+|   |   |   |      Services
+============================================ */
+
+.service-icon {
+    font-size: 35px;
+    -webkit-transition: 400ms linear;
+    transition: 400ms linear;
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+    text-align: left;
+    vertical-align: top;
+}
+
+.service-icon:hover {
+    color: #00adb5;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.service-text {
+    text-align: top;
+}
+
+/*  ===========================================
+|   |   |   |   Technology
+============================================ */
+
+#technology {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#technology-item {
+    overflow: hidden;
+    position: relative;
+}
+
+#technology-wrapper {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0px;
+}
+
+#technology-wrapper img {
+    border-radius: 360px;
+    
+}
+
+/* Item Detail Effect */
+.technology-item-details {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.technology-item-details h3 {
+    color: #00adb5;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.technology-item-details span {
+    display: inline-block;
+    border-top: 3px solid #00adb5;
+    border-bottom: 3px solid #00adb5;
+    height: 10px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+
+/* Item Detail Effect small items */
+
+#technology-items-details-small {
+    top: 30%;
+}
+#technology-items-details-small h3 {
+    font-size: 13px;
+    margin: 5px;
+}
+
+#technology-items-details-small span {
+    border-top: none;
+    border-bottom: none;
+    height: 10px;
+    width: 15px;
+    margin: 0px auto 0px auto;
+}
+
+/* Zoom effect */
+
+.technology-item {
+    transition: transform .9s ease;
+}
+
+.technology-item:hover {
+    transform: skew(-2deg);
+}
+
+/*  ===========================================
+|   |   |   |     Focus
+============================================ */
+
+#focus-tabs ul {
+    margin-bottom: 40px;
+}
+
+#focus-tabs ul li {
+    padding: 5px 30px;
+}
+
+#focus-tabs ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: #222831;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Tab active state */
+#focus-tabs ul li.r-tabs-state-active a {
+    color: #00adb5;
+    border: 1px solid #00adb5;
+    border-radius: 13px;
+    padding: 5px;
+    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;
+}
+
+.focus-tab .col-md-6 {
+    padding: 0;
+}
+
+.focus-tab img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.focus-tab .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 481px;
+    border-radius: 10px;
+}
+
+.focus-tab h2 {
+    font-size: 48px;
+    color: #393e46;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.focus-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.focus-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/*  ===========================================
+|   |   |   |     Contact
+============================================ */
+
+#contact {
+    background-image: url("../img/contact/contact.jpg");
+    z-index: -2;
+    background-clip: 20px;
+}
+
+#contact h4 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+}
+
+#contact-left ul.social-list li a {
+    color: #222831;
+    border-color: #222831;
+    text-align: center;
+}
+
+#contact-right {
+    padding: 25px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+#contact-right form .form-control {
+    font-family: "Open Sans", sans-serif;
+}
+
+/*  ===========================================
+|   |   |   |       Maps
+============================================ */
+
+#map {
+    width: 100%;
+    height: 430px;
+    background: #eeeeee;
+}
+
+#panel {
+    width: 100%;
+    height: 400px;
+}
+
+/*  ===========================================
+|   |   |   |       Footer
+============================================ */
+
+footer {
+    background: #393e46;
+    padding: 30px;
+}
+
+footer p {
+    color: #eeeeee;
+    line-height: 20px;
+}
+
+footer p span {
+    color: #00adb5;
+}
