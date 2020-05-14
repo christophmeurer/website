@@ -34,6 +34,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" media="screen" href="css/style.css">
 
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" media="screen" href="css/responsive.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="65">
@@ -50,6 +53,9 @@
             <div class="container-fluid">
                 <div class="site-nav-wrapper">
                     <div class="navbar-header">
+                       <!-- Mobile Menu Open Button -->
+                       <span id="mobile-nav-open-btn">&#9776;</span>
+                       
                         <!-- Logo -->
                         <a class="navbar-brand smooth-scroll" href="#home-btn">
                             <img src="img/logo/logo-cm-dark.png" alt="logo" href="#image-home">
@@ -67,6 +73,24 @@
                             </ul>
                         </div>
                     </div>
+                    
+                    <!-- Mobile Menu -->
+                    <div id="mobile-nav">
+                      
+                       <!-- Mobile Menu Close Button-->
+                        <span id="mobile-nav-close-btn">&times;</span>
+                        
+                        <div id="mobile-nav-content">
+                            <ul class="nav">
+                                <li><a class="smooth-scroll" href="#home-btn">Home</a></li>
+                                <li><a class="smooth-scroll" href="#skills">Erfahrung</a></li>
+                                <li><a class="smooth-scroll" href="#focus">Schwerpunkte</a></li>
+                                <li><a class="smooth-scroll" href="#technology">Technologien</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
@@ -124,7 +148,7 @@
                         <div id="about-table" class="owl-carousel owl-theme">
 
                             <!-- About me 01 -->
-                            <div class="about-bio">
+                            <div class="about-bio" style="overflow-x:auto">
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -161,7 +185,7 @@
 
                             </div>
                             <!-- About me 02 -->
-                            <div class="about-bio">
+                            <div class="about-bio" style="overflow-x:auto">
 
                                 <table class="table">
                                     <thead>
@@ -203,7 +227,7 @@
 
                             </div>
                             <!-- About me 03 -->
-                            <div class="about-bio">
+                            <div class="about-bio" style="overflow-x:auto">
 
                                 <table class="table">
                                     <thead>
@@ -245,8 +269,7 @@
 
                             </div>
                             <!-- About me 04 -->
-                            <div class="about-bio">
-
+                            <div class="about-bio" style="overflow-x:auto">
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -257,23 +280,23 @@
                                         <tr>
                                             <td>
                                                 <img src="img/aboutme/hobby1.png" alt="team-member" class="img-responsive about-me-icon">
-                                                <p class="text-center">Keep Learning</p>
+                                                <p id="hobby-text" class="text-center">Weiterbilden</p>
                                             </td>
                                             <td>
                                                 <img src="img/aboutme/hobby2.png" alt="team-member" class="img-responsive about-me-icon">
-                                                <p class="text-center">Radln</p>
+                                                <p id="hobby-text" class="text-center">Radln</p>
                                             </td>
                                             <td>
                                                 <img src="img/aboutme/hobby3.png" alt="team-member" class="img-responsive about-me-icon">
-                                                <p class="text-center">Kochen</p>
+                                                <p id="hobby-text" class="text-center">Kochen</p>
                                             </td>
                                             <td>
                                                 <img src="img/aboutme/hobby4.png" alt="team-member" class="img-responsive about-me-icon">
-                                                <p class="text-center">Städtetrips</p>
+                                                <p id="hobby-text" class="text-center">Städtetrips</p>
                                             </td>
                                             <td>
                                                 <img src="img/aboutme/hobby5.png" alt="team-member" class="img-responsive about-me-icon">
-                                                <p class="text-center">Wandern</p>
+                                                <p id="hobby-text" class="text-center">Wandern</p>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -300,9 +323,8 @@
                             <div id="progress-elements">
                                 <!-- Progress Bars -->
                                 <div class="row">
-                                    <div class="col-md-12">
-
-                                        <!-- Skill 01 -->
+                                    <!-- Skill 01 -->
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="skill">
                                             <h4>Projektarbeit</h4>
                                             <div class="progress">
@@ -313,7 +335,7 @@
                                         </div>
                                     </div>
                                     <!-- Skill 02 -->
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
                                         <div class="skill">
                                             <h4>Testmanagement</h4>
                                             <div class="progress">
@@ -325,7 +347,7 @@
                                     </div>
 
                                     <!-- Skill 03 -->
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
                                         <div class="skill">
                                             <h4>Anforderungsmanagement</h4>
                                             <div class="progress">
@@ -337,7 +359,7 @@
                                     </div>
 
                                     <!-- Skill 04 -->
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
                                         <div class="skill">
                                             <h4>IT Technologien</h4>
                                             <div class="progress">
@@ -349,7 +371,7 @@
                                     </div>
 
                                     <!-- Skill 05 -->
-                                    <div class="col-md-6">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
                                         <div class="skill">
                                             <h4>Webentwicklung</h4>
                                             <div class="progress">
@@ -384,10 +406,10 @@
                 <div id="focus-tab-1" class="focus-tab">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <img src="img/focus/focus-01.jpg" alt="test">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <div class="tab-bg">
                                     <h2>01</h2>
                                     <h3>Testmanagement</h3>
@@ -402,10 +424,10 @@
                 <div id="focus-tab-2" class="focus-tab">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <img src="img/focus/focus-02.jpg" alt="test">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <div class="tab-bg">
                                     <h2>02</h2>
                                     <h3>Anforderungsanalyse</h3>
@@ -420,10 +442,10 @@
                 <div id="focus-tab-3" class="focus-tab">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <img src="img/focus/focus-03.jpg" alt="test">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <div class="tab-bg">
                                     <h2>03</h2>
                                     <h3>Webentwicklung</h3>
@@ -438,10 +460,10 @@
                 <div id="focus-tab-4" class="focus-tab">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <img src="img/focus/focus-04.jpg" alt="test">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-ms-6 col-xs-12">
                                 <div class="tab-bg">
                                     <h2>04</h2>
                                     <h3>Webdesign</h3>
@@ -489,7 +511,7 @@
                     <div class="row no-gutters">
                         <div id="isotope-container">
 
-                            <div class="col-md-2 methods">
+                            <div class="col-md-2 col-sm-2 col-xs-4 methods">
                                 <!-- Technology Item 01 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -506,24 +528,24 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-1 tools">
+                            <div class="col-md-1 col-sm-1 col-xs-2 tools">
                                 <!-- Technology Item 02 -->
                                 <div class="technology-item">
-                                        <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
-                                        <div class="technology-item-overlay">
-                                            <div id="technology-items-details-small" class="technology-item-details text-center">
-                                                <!-- Item Header -->
-                                                <h3>Atlassian Confluence</h3>
+                                    <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
+                                    <div class="technology-item-overlay">
+                                        <div id="technology-item-details-small" class="technology-item-details text-center">
+                                            <!-- Item Header -->
+                                            <h3>Atlassian Confluence</h3>
 
-                                                <!-- Item Strips -->
-                                                <span></span>
-                                                <!-- Item Description -->
-                                            </div>
+                                            <!-- Item Strips -->
+                                            <span></span>
+                                            <!-- Item Description -->
                                         </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-2 tools">
+                            <div class="col-md-2 col-sm-2 col-xs-4 tools">
                                 <!-- Technology Item 03 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -540,7 +562,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 ides">
+                            <div class="col-md-2 col-sm-2 col-xs-4 ides">
                                 <!-- Technology Item 04 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-white.jpg" class="img-responsive" alt="">
@@ -557,7 +579,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 programming-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 programming-language">
                                 <!-- Technology Item 05 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
@@ -574,7 +596,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 ides">
+                            <div class="col-md-2 col-sm-2 col-xs-4 ides">
                                 <!-- Technology Item 06 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-dark.jpg" class="img-responsive" alt="">
@@ -591,7 +613,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 markup-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 markup-language">
                                 <!-- Technology Item 07 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -608,7 +630,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 tools">
+                            <div class="col-md-2 col-sm-2 col-xs-4 tools">
                                 <!-- Technology Item 08 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
@@ -625,7 +647,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 markup-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 markup-language">
                                 <!-- Technology Item 09 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-white.jpg" class="img-responsive" alt="">
@@ -642,12 +664,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-1 ides">
+                            <div class="col-md-1 col-sm-1 col-xs-2 ides">
                                 <!-- Technology Item 10 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-dark.jpg" class="img-responsive" alt="">
                                     <div class="technology-item-overlay">
-                                        <div id="technology-items-details-small" class="technology-item-details text-center">
+                                        <div id="technology-item-details-small" class="technology-item-details text-center">
                                             <!-- Item Header -->
                                             <h3>IntelliJ</h3>
 
@@ -659,7 +681,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 programming-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 programming-language">
                                 <!-- Technology Item 12 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-dark.jpg" class="img-responsive" alt="">
@@ -676,7 +698,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 tools">
+                            <div class="col-md-2 col-sm-2 col-xs-4 tools">
                                 <!-- Technology Item 12 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -693,7 +715,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 methods">
+                            <div class="col-md-2 col-sm-2 col-xs-4 methods">
                                 <!-- Technology Item 13 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-white.jpg" class="img-responsive" alt="">
@@ -710,12 +732,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-1 oes">
+                            <div class="col-md-1 col-sm-1 col-xs-2 oes">
                                 <!-- Technology Item 14 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
                                     <div class="technology-item-overlay">
-                                        <div id="technology-items-details-small"  class="technology-item-details text-center">
+                                        <div id="technology-item-details-small" class="technology-item-details text-center">
                                             <!-- Item Header -->
                                             <h3>MS Windows</h3>
 
@@ -727,7 +749,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 programming-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 programming-language">
                                 <!-- Technology Item 15 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
@@ -744,7 +766,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 programming-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 programming-language">
                                 <!-- Technology Item 16 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -761,7 +783,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 oes">
+                            <div class="col-md-2 col-sm-2 col-xs-4 oes">
                                 <!-- Technology Item 17 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-grey.jpg" class="img-responsive" alt="">
@@ -778,12 +800,12 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-1 methods">
+                            <div class="col-md-1 col-sm-1 col-xs-2 methods">
                                 <!-- Technology Item 18 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-dark.jpg" class="img-responsive" alt="">
                                     <div class="technology-item-overlay">
-                                        <div id="technology-items-details-small" class="technology-item-details text-center">
+                                        <div id="technology-item-details-small" class="technology-item-details text-center">
                                             <!-- Item Header -->
                                             <h3>SCRUM</h3>
 
@@ -795,7 +817,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 programming-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 programming-language">
                                 <!-- Technology Item 19 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-white.jpg" class="img-responsive" alt="">
@@ -812,7 +834,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 oes">
+                            <div class="col-md-2 col-sm-2 col-xs-4 oes">
                                 <!-- Technology Item 20 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-fullwhite.jpg" class="img-responsive" alt="">
@@ -829,7 +851,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-2 markup-language">
+                            <div class="col-md-2 col-sm-2 col-xs-4 markup-language">
                                 <!-- Technology Item 21 -->
                                 <div class="technology-item">
                                     <img src="img/technology/technology-blank-dark.jpg" class="img-responsive" alt="">
@@ -851,77 +873,7 @@
             </section>
         </div>
     </section>
-    <!-- Technology2 Ends -->
-
-    <!-- Technology
-      <section id="technology">
-    <div id="technology-01">
-      <div class="content-box-lg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center" style="text-align:left">
-              <div class="horizontal-heading">
-                <h2>Technologien</h2>
-                <hr>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <table class="table-technology">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h4>Anforderungsanalyse</h4>
-                    </td>
-                    <td>
-                      <p class="btn btn-general btn-technology">Business Analyse</p>
-                      <p class="btn btn-general btn-technology" id="btn-technology-special">Lebenslauf</p>
-                      <p class="btn btn-general btn-technology">SQL</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <h4>Testmanagement</h4>
-                    </td>
-                    <td>
-                      <p class="btn btn-general btn-technology" id="btn-technology-special">Web Webentwicklung</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                      <p class="btn btn-general btn-technology">JQuery</p>
-                      <p class="btn btn-general btn-technology">Javascript</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <h4>Webentwicklung</h4>
-                    </td>
-                    <td>
-                      <p class="btn btn-general btn-technology" id="btn-technology-special">Lebenslauf</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                      <p class="btn btn-general btn-technology">Python</p>
-                      <p class="btn btn-general btn-technology" id="btn-technology-special">PHP</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <h4>Datenbanken</h4>
-                    </td>
-                    <td>
-                      <p class="btn btn-general btn-technology">SQL</p>
-                      <p class="btn btn-general btn-technology" id="btn-technology-special">PHP</p>
-                      <p class="btn btn-general btn-technology">Test</p>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  <!-- Technology Ends -->
+    <!-- Technology Ends -->
 
     <!-- Contact -->
     <section id="contact">
@@ -931,7 +883,7 @@
                     <div class="horizontal-heading" style="text-align:center">
                         <h2><span>Kontakt</span></h2>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
 
                         <!-- Contact Left -->
 
@@ -941,7 +893,7 @@
                     <!-- Maps Ends -->
 
                     <!-- Contact Right -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div id="contact-right">
                             <form action="">
                                 <h4>Ihre Nachricht</h4>
@@ -958,7 +910,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="phone" placeholder="Telefonnummer">
+                                            <input type="text" class="form-control" id="phone" placeholder="Telefon">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -968,10 +920,10 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Ihre Nachricht" rows="8" cols="80"></textarea>
-                                </div id="submit-btn">
-                                <a class="btn btn-general btn-home" href="#" title="Submit">Senden</a>
-                                <div>
+                                    <textarea class="form-control" id="message" placeholder="Ihre Nachricht"></textarea>
+                                </div>
+                                <div id="submit-btn">
+                                    <a class="btn btn-general btn-home" href="#" title="Submit">Senden</a>
                                 </div>
                             </form>
                         </div>
@@ -995,7 +947,7 @@
         </div>
 
         <!-- Back to Top Button -->
-        <a href="#home-btn" id="back-to-top" class="btn btn-sm btn-general btn-back-to-top smooth-scroll" title="home" role="button"><i class="fa fa-angle-up"></i></a>
+        <a href="#home-btn" id="back-to-top" class="btn btn-sm btn-general btn-back-to-top smooth-scroll hidden-sm hidden-xs" title="home" role="button"><i class="fa fa-angle-up"></i></a>
     </footer>
     <!-- Footer Ends -->
 
@@ -1017,14 +969,14 @@
     <!-- Isotope JS -->
     <script src="js/isotope/original.js"></script>
 
+    <!-- Easing JS -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+
     <!-- Here Maps JS -->
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js"></script>
     <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js"></script>
-
-    <!-- Easing JS -->
-    <script src="js/easing/jquery.easing.1.3.js"></script>
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>

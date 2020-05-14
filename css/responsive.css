@@ -1,0 +1,458 @@
+/*  ===========================================
+|   |   |   |       Mobile Menu
+============================================ */
+
+.navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    color: #00adb5;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    top: 6px;
+
+    /* Hide mobile nav opten btn */
+    display: none;
+}
+
+#mobile-nav {
+    width: 100%;
+    
+    /* By Default mobile nav will be hidden by 0% */
+    height: 0%;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, .9);
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+
+#mobile-nav-close-btn {
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    color: #393e46;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 13px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav-content {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 10%;
+}
+
+#mobile-nav ul li {
+    margin-bottom: 20px;
+}
+
+#mobile-nav a {
+    color: #393e46;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus {
+    color: #00adb5;
+    background: none;
+    font-weight: 500;
+}
+
+/* Mobile nav scroll spy active state */
+
+.dark-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #00adb5;
+    font-weight: 500;
+}
+
+/*  ===========================================
+|   |   |  Bootstrap 3 Media Queries
+============================================ */
+/*  ========================================================
+|   |   |   Large Devices (Desktop & Laptops)
+========================================================= */
+
+@media (min-width: 1200px) {}
+
+/* Medium Devices (Landscape Tablets & Medium Desktop) */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Focus Tab 02 */
+    #focus-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 400px
+    }
+
+    /* Technology Item Details */
+    .technology-item-details h3 {
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .technology-item-details span {
+        height: 9px;
+        width: 23px;
+        border-top: 2px solid #00adb5;
+        border-bottom: 2px solid #00adb5;
+        margin: 0px auto 5px auto;
+    }
+
+    /* Technology Item Detail effect small items */
+    #technology-item-details-small h3 {
+        font-weight: 500;
+        font-size: 9px;
+        margin: 5px;
+    }
+
+}
+
+/*  ========================================================
+|   | Small Devices (Portrait Tablets & Small Desktop)
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Focus Section */
+
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        color: #222831;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #00adb5;
+        border: 1px solid #00adb5;
+        border-radius: 13px;
+        padding: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+    }
+
+    /* Technology Item Details */
+
+    .technology-item-details {
+        font-weight: 500;
+        top: 20%;
+    }
+
+    .technology-item-details h3 {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .technology-item-details span {
+        display: inline-block;
+        border-top: 2px solid #00adb5;
+        border-bottom: 2px solid #00adb5;
+        height: 8px;
+        width: 20px;
+        margin: 0px auto 5px auto;
+    }
+
+    /* Technology Item Detail effect small items */
+
+    #technology-item-details-small {
+        font-weight: 500;
+        top: 30%;
+    }
+
+    #technology-item-details-small h3 {
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    /* Contact */
+
+    #contact textarea {
+        height: 13em;
+    }
+
+    /* Buttons */
+
+    .btn-home {
+        color: #393e46;
+        border: 1px solid #393e46;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+
+    #isotope-filters .btn {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    #isotope-filters .btn.active {
+        font-weight: 600;
+    }
+}
+
+/*  ========================================================
+| Extra small Devices (Landscape phones & Portrait Tablets)
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* Navigation */
+
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper,
+    .dark-nav-top {
+        padding: 20;
+    }
+
+    /* Show mobile nav opten btn */
+    #mobile-nav-open-btn {
+        display: block;
+    }
+    
+    /* Slider Buttons */
+
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel button.owl-dot {
+        font-size: 20px;
+    }
+
+    /* Force table to not be like tables anymore */
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .about-bio p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .about-bio img {
+        max-width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        background-position: center !important;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 40px;
+        font-weight: 350;
+    }
+
+    #home-text p {
+        font-size: 20px;
+    }
+
+    /* Focus Section */
+
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #222831;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #00adb5;
+        border: 1px solid #00adb5;
+        border-radius: 13px;
+        padding: 5px;
+        transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+    }
+
+    .focus-tab h2 {
+        font-size: 40px;
+    }
+
+    .focus-tab h3 {
+        font-size: 26px;
+    }
+
+    /* Technology Item Details */
+
+    .technology-item-details {
+        font-weight: 500;
+        top: 30%;
+    }
+
+    .technology-item-details h3 {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .technology-item-details span {
+        display: inline-block;
+        border-top: 2px solid #00adb5;
+        border-bottom: 2px solid #00adb5;
+        height: 8px;
+        width: 15px;
+        margin: 0px auto 5px auto;
+    }
+
+    /* Technology Item Detail effect small items */
+
+    #technology-item-details-small {
+        font-weight: 500;
+    }
+
+    #technology-item-details-small h3 {
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    /* Map */
+
+    #map {
+        height: 320px;
+    }
+
+    /* Buttons */
+
+    #isotope-filters .btn {
+        font-weight: 500;
+        font-size: 10px;
+    }
+
+    .btn-home {
+        color: #393e46;
+        border: 1px solid #393e46;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+
+}
+
+/*  ========================================================
+| Extra small Devices (Portrait phones & Smaller Devices)
+========================================================= */
+
+@media (max-width: 480px) {
+
+    /* Horizontal Headings */
+
+    .horizontal-heading h2 {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 45px;
+    }
+
+    h2 span {
+        padding-bottom: 5px;
+        border-bottom: 3px solid #393e46;
+    }
+
+    /* Home */
+    #home-heading h1 {
+        font-size: 30px;
+    }
+
+    #home-text p {
+        font-size: 15px;
+    }
+
+}
+
+/*  ========================================================
+| Extra small Devices (Portrait phones & Smaller Devices)
+========================================================= */
+
+@media (max-width: 320px) {
+
+    /* Home */
+
+    #home-content h1 {
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    #home-content p {
+        font-size: 15px;
+        font-weight: 200;
+    }
+
+
+    #image-home {
+        position: absolute;
+        text-align: center;
+        left: 65%;
+        bottom: -100px;
+        border-radius: 360px;
+        margin-left: -150px;
+        width: 200px;
+    }
+
+    #hobby-text {
+        font-size: 15px;
+    }
+
+}

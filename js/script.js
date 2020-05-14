@@ -18,14 +18,13 @@ $(function () {
     $('#about-table').owlCarousel({
         items: 1,
         autoplay: true,
-        smartSpeed: 700,
+        smartSpeed: 1000,
         loop: true,
         autoplayHoverPause: true,
         nav: true,
         dots: false,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         checkVisibility: false
-
     });
 });
 
@@ -101,7 +100,7 @@ $(function () {
 
             // Show dark logo
             $(".navbar-brand img").attr("src", "img/logo/logo-cm-dark.png");
-            
+
             // Hide back to top button
             $("#back-to-top").fadeOut();
         }
@@ -125,6 +124,23 @@ $(function () {
 });
 
 /*  ===========================================
+|   |   |   |   Mobile Menu
+============================================ */
+
+$(function () {
+
+    // Show mobile nav
+    $("#mobile-nav-open-btn").click(function () {
+        $("#mobile-nav").css("height", "100%");
+    });
+
+    // Hide mobile nav
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function () {
+        $("#mobile-nav").css("height", "0%");
+    });
+});
+
+/*  ===========================================
 |   |   |   |       Maps
 ============================================ */
 
@@ -141,7 +157,7 @@ function addMarkersToMap(map) {
 
 // Initialize communication with the platform
 var platform = new H.service.Platform({
-    apikey: '3Iot4lYtEQ9jI6H1jEHR',
+    apikey: 'y7UDnJ6huS44glGzcMpaI_-UzCLng5SdBVflUyqv7r4',
 });
 var defaultLayers = platform.createDefaultLayers();
 
@@ -149,10 +165,10 @@ var defaultLayers = platform.createDefaultLayers();
 var map = new H.Map(document.getElementById('map'),
     defaultLayers.vector.normal.map, {
         center: {
-            lat: 50,
-            lng: 5
+            lat: 48.76508,
+            lng: 11.42372
         },
-        zoom: 4,
+        zoom: 10,
         pixelRatio: window.devicePixelRatio || 1
     });
 
@@ -176,57 +192,28 @@ window.onload = function () {
 |   |   |   |   Technology
 ============================================ */
 
-$(window).on('load', function() {
-   
+$(window).on('load', function () {
+
     // Initialize Isotope
     $("#isotope-container").isotope({
-        
+
     });
-    
+
     // filter items on button click
-    $("#isotope-filters").on('click', 'button',function() {
-        
+    $("#isotope-filters").on('click', 'button', function () {
+
         // get filter value
         var filterValue = $(this).attr('data-filter');
-        
+
         // filter technology items
         $("#isotope-container").isotope({
             filter: filterValue
-        
+
         });
-        
+
         // active button
         $("#isotope-filters").find('.active').removeClass('active');
         $(this).addClass('active');
-        
+
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

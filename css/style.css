@@ -181,6 +181,7 @@ ul.navbar-nav > li > a:focus {
 
 #home-text p {
     color: #393e46;
+    font-weight: 300;
     font-size: 24px;
     font-weight: 300;
     margin: 8px 0px 30px 0px;
@@ -207,10 +208,6 @@ ul.navbar-nav > li > a:focus {
 .about-bio {
     margin: 8px;
     position: relative;
-    /*padding: 25px 30px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 16px; */
 }
 
 .about-overlay {
@@ -266,7 +263,7 @@ p {
 }
 
 .about-bio img:hover {
-    -webkit-transform: scale(1.1);    
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -396,14 +393,14 @@ p {
     color: #393e46;
     background: transparent;
     border: 1px solid #393e46;
-    font-weight: 500;
+    font-weight: 600;
     padding: 6px;
     margin-right: 0;
     margin-bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    -webkit-box-shadow: none;    
+    -webkit-box-shadow: none;
     box-shadow: none;
 
 }
@@ -459,7 +456,6 @@ h2 span {
     display: block;
     padding-bottom: 7px;
     border-bottom: 5px solid #393e46;
-    max-width: 5%;
     display: table;
 }
 
@@ -467,22 +463,6 @@ h2 span {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-/*  ===========================================
-|   |   |   |   About 01
-============================================ */
-
-#about-right p:first-child {
-    margin-bottom: 30px;
-}
-
-#about-bottom {
-    margin-top: 60px;
-}
-
-#about-bottom img {
-    margin: 0 auto;
 }
 
 /*  ===========================================
@@ -606,27 +586,69 @@ ul.social-list li:nth-child(2) a:hover {
 }
 
 /*  ===========================================
-|   |   |   |      Services
+|   |   |   |     Focus
 ============================================ */
 
-.service-icon {
-    font-size: 35px;
-    -webkit-transition: 400ms linear;
-    transition: 400ms linear;
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
-    text-align: left;
-    vertical-align: top;
+#focus-tabs ul {
+    margin-bottom: 40px;
 }
 
-.service-icon:hover {
+#focus-tabs ul li {
+    padding: 5px 30px;
+}
+
+#focus-tabs ul li a {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: #222831;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Tab active state */
+
+#focus-tabs ul li.r-tabs-state-active a {
     color: #00adb5;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
+    border: 1px solid #00adb5;
+    border-radius: 13px;
+    padding: 5px;
+    transition: border-color 300ms linear;
+    -webkit-transition: border-color 300ms linear;
 }
 
-.service-text {
-    text-align: top;
+.focus-tab .col-md-6 {
+    padding: 0;
+}
+
+.focus-tab img {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.focus-tab .tab-bg {
+    background: #fff;
+    padding: 59px 30px;
+    min-height: 481px;
+}
+
+.focus-tab h2 {
+    font-size: 48px;
+    color: #393e46;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.focus-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.focus-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
 }
 
 /*  ===========================================
@@ -651,11 +673,11 @@ ul.social-list li:nth-child(2) a:hover {
 }
 
 #technology-wrapper img {
-    border-radius: 360px;
-    
+    border-radius: 0px;
 }
 
 /* Item Detail Effect */
+
 .technology-item-details {
     width: 100%;
     position: absolute;
@@ -665,7 +687,7 @@ ul.social-list li:nth-child(2) a:hover {
 
 .technology-item-details h3 {
     color: #00adb5;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -679,17 +701,18 @@ ul.social-list li:nth-child(2) a:hover {
     margin: 11px auto 5px auto;
 }
 
-/* Item Detail Effect small items */
+/* Item Detail effect small items */
 
-#technology-items-details-small {
-    top: 30%;
+#technology-item-details-small {
+    top: 35%;
 }
-#technology-items-details-small h3 {
-    font-size: 13px;
+
+#technology-item-details-small h3 {
+    font-size: 10px;
     margin: 5px;
 }
 
-#technology-items-details-small span {
+#technology-item-details-small span {
     border-top: none;
     border-bottom: none;
     height: 10px;
@@ -704,73 +727,7 @@ ul.social-list li:nth-child(2) a:hover {
 }
 
 .technology-item:hover {
-    transform: skew(-2deg);
-}
-
-/*  ===========================================
-|   |   |   |     Focus
-============================================ */
-
-#focus-tabs ul {
-    margin-bottom: 40px;
-}
-
-#focus-tabs ul li {
-    padding: 5px 30px;
-}
-
-#focus-tabs ul li a {
-    font-family: "Raleway", sans-serif;
-    font-size: 15px;
-    color: #222831;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 0;
-    text-decoration: none;
-}
-
-/* Tab active state */
-#focus-tabs ul li.r-tabs-state-active a {
-    color: #00adb5;
-    border: 1px solid #00adb5;
-    border-radius: 13px;
-    padding: 5px;
-    transition: border-color 300ms linear;
-    -webkit-transition: border-color 300ms linear;
-}
-
-.focus-tab .col-md-6 {
-    padding: 0;
-}
-
-.focus-tab img {
-    width: 100%;
-    margin: 0 auto;
-    border-radius: 10px;
-}
-
-.focus-tab .tab-bg {
-    background: #fff;
-    padding: 59px 30px;
-    min-height: 481px;
-    border-radius: 10px;
-}
-
-.focus-tab h2 {
-    font-size: 48px;
-    color: #393e46;
-    margin-bottom: 20px;
-    font-weight: 200;
-}
-
-.focus-tab h3 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.focus-tab p {
-    line-height: 24px;
-    margin-bottom: 30px;
+    transform: scale(1.05);
 }
 
 /*  ===========================================
@@ -778,8 +735,8 @@ ul.social-list li:nth-child(2) a:hover {
 ============================================ */
 
 #contact {
-    background-image: url("../img/contact/contact.jpg");
-    z-index: -2;
+    background: #fff;
+    background-position: bottom;
     background-clip: 20px;
 }
 
@@ -804,6 +761,10 @@ ul.social-list li:nth-child(2) a:hover {
 
 #contact-right form .form-control {
     font-family: "Open Sans", sans-serif;
+}
+
+#contact textarea {
+    height: 13em;
 }
 
 /*  ===========================================
