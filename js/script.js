@@ -217,3 +217,22 @@ $(window).on('load', function () {
 
     });
 });
+
+/*  ===========================================
+|   |   |   |       Animation
+============================================ */
+
+// Animate on scroll
+$(function () { 
+    
+    new WOW().init();
+    
+});
+
+// Home animation on page load
+$(window).on('load', function () {
+   
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-text").addClass("animated zoomIn");
+    
+});
